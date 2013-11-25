@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "libgaia-html": "https://github.com/snowmantw/libgaia-html.git#~0.0.1"
+  },
+  "name": "gaia-calendar",
+  "version": "0.0.1"
+}

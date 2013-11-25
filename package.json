@@ -1,0 +1,18 @@
+{
+  "author": "Mozilla",
+  "name": "gaia-calendar",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Built-in calendar app of Mozilla Gaia",
+  "devDependencies": {
+    "bower": "~1.2.7",
+    "grunt-cli": "~0.1.11",
+    "grunt-bower-task": "~0.3.4",
+    "grunt-contrib-jshint": "~0.7.2"
+  },
+  "dependencies": {
+  },
+  "scripts": {
+    "postinstall": "grunt --force"
+  }
+}

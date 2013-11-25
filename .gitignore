@@ -2,3 +2,5 @@ test.data
 test-data/*.ics
 design
 api-design
+node_modules
+lib
