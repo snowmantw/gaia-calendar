@@ -8,7 +8,8 @@ module.exports = function(grunt) {
       },
       // .bowerrc would NOT work.
       options: {
-        targetDir: 'lib'
+        cleanBowerDir: true,
+        targetDir: 'libs'
       }
     },
     jshint: {
