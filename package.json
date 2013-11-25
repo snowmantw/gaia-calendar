@@ -6,6 +6,7 @@
   "description": "Built-in calendar app of Mozilla Gaia",
   "devDependencies": {
     "bower": "~1.2.7",
+    "grunt": "~0.4.0",
     "grunt-cli": "~0.1.11",
     "grunt-bower-task": "~0.3.4",
     "grunt-contrib-jshint": "~0.7.2"
