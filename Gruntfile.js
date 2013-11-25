@@ -2,6 +2,7 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-bower-task');
+  grunt.loadNpmTasks('grunt-gaia-builder');
   grunt.initConfig({
     bower: {
       install: {
@@ -14,9 +15,17 @@ module.exports = function(grunt) {
     },
     jshint: {
       all: ['Gruntfile.js', '**/*.js']
+    },
+    gaiabuilder: {
+      options: {
+        depends: ['gaia-calendar'],
+        targetDir: '/tmp/calendar-build'
+      }
     }
   });
 
   grunt.registerTask('test', ['jshint', 'bower']);
+  grunt.registerTask('build', ['bower', 'gaiabuilder']);
+  grunt.registerTask('merge', ['bower']);
   grunt.registerTask('default', ['bower']);
 }
