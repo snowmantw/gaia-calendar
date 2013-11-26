@@ -10,10 +10,9 @@
     "grunt-cli": "~0.1.11",
     "grunt-bower-task": "~0.3.4",
     "grunt-contrib-jshint": "~0.7.2",
-    "grunt-gaia-builder": "~0.0.2"
+    "grunt-gaia-builder": "0.0.4"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "scripts": {
     "postinstall": "grunt bower"
   }
