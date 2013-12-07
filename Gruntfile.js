@@ -19,7 +19,8 @@ module.exports = function(grunt) {
     gaiabuilder: {
       options: {
         depends: ['gaia-calendar'],
-        targetDir: '/tmp/calendar-build'
+        essentialPath: '/tmp/calendar-build',
+        profilePath: '/tmp/calendar-build/profile'
       }
     }
   });
