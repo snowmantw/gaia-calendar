@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       options: {
         depends: ['gaia-calendar'],
         essentialPath: '/tmp/calendar-build',
-        profilePath: '/tmp/calendar-build/profile'
+        profilePath: '/tmp/calendar-build-profile'
       }
     }
   });
