@@ -17,10 +17,19 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', '**/*.js']
     },
     gaiabuilder: {
-      options: {
-        depends: ['gaia-calendar'],
-        essentialPath: '/tmp/calendar-build',
-        profilePath: '/tmp/calendar-build-profile'
+      vanulla: {
+        options: {
+          depends: ['gaia-calendar'],
+          essentialPath: '/tmp/calendar-build',
+          profilePath: '/tmp/calendar-build-profile'
+        }
+      },
+      full: {
+        options: {
+          depends: ['gaia-calendar', 'gaia-homescreen'],
+          essentialPath: '/tmp/calendar-build-full',
+          profilePath: '/tmp/calendar-build-profile-full'
+        }
       }
     }
   });
