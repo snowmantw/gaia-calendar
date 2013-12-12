@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', '**/*.js']
     },
     gaiabuilder: {
-      vanulla: {
+      vanilla: {
         options: {
           depends: ['gaia-calendar'],
           essentialPath: '/tmp/calendar-build',
@@ -28,14 +28,15 @@ module.exports = function(grunt) {
         options: {
           depends: ['gaia-calendar', 'gaia-homescreen'],
           essentialPath: '/tmp/calendar-build-full',
-          profilePath: '/tmp/calendar-build-profile-full'
+          profilePath: '/tmp/calendar-build-full-profile'
         }
       }
     }
   });
 
   grunt.registerTask('test', ['jshint', 'bower']);
-  grunt.registerTask('build', ['bower', 'gaiabuilder']);
+  grunt.registerTask('build-vanilla', ['bower', 'gaiabuilder:vanilla']);
+  grunt.registerTask('build-full', ['bower', 'gaiabuilder:full']);
   grunt.registerTask('merge', ['bower']);
   grunt.registerTask('default', ['bower']);
-}
+};
